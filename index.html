@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles/logged_css.css">
+    <script
+    src="https://kit.fontawesome.com/6a5b34451f.js"
+    crossorigin="anonymous"
+  ></script>
+    <script type="text/javascript" src="script/drop_menu.js"></script>
+    <script type="text/javascript" src="script/navigation_script.js"></script>
+    <script type="text/javascript" src="script/hover_effects.js"></script>
+    <script type="text/javascript" src="script/response.js"></script>
+</head>
+
+<body>
+    <div class="top-line">
+        <a href="#" class="menu-icon"><char style="color: white;" onclick="Open()">&#9776</char></a>
+            <a href="#" class="close-icon"><char style="color: white;" onclick="Close()">&#9776</char></a>
+
+        <div class="profile_panel_drop" onclick="drop_profile_panel()">
+            <a href="#">
+                <img src="assets/IMG_5432.jpg" alt=" Sullivan Trust"> 
+                <span>Sullivan Trust</span>
+            </a>
+        </div>
+    </div> 
+
+
+    <div class="main-body">
+
+        <!-- profile page drop  -->
+    <div class="profile_panel_container">
+        <div class="profile_panel_intro">
+            <img src="assets/IMG_5432.jpg" width="100%" alt="Sullivan Trust" >
+        </div>
+
+        <div class="profile_panel_end">  
+        <button onclick="location.href='profile_page.html'" style="background-color: blue;">Profile </button>
+        <button id="logOut"  onclick="location.href='../login_page.html'" style="float: right; background-color: red;">Log Out</button>
+  
+        </div>
+    </div>
+    
+    <!-- first two boxes -->
+     <div style="padding-top:25px; padding-left: 35px; width:100% ;">
+        <div style="background-color: rgb(49, 187, 49);"  class="top-boxes" onmouseover="hoverEffectOn1();" onmouseout="hoverEffectOff1();">
+            <img src="./assets/download__2_-removebg-preview.png" style= "opacity: 0.2;" class="back-img" >
+    <span style="text-align: left; position: absolute;">
+            Share holding<br>
+            Amount: 0<br>
+            No. of shares-NA-
+    </span> 
+        </div>
+
+        <div style="background-color: rgb(233, 167, 45);"  class="top-boxes" onmouseover="hoverEffectOn2();" onmouseout="hoverEffectOff2();">
+            <img src="./assets/mck-icon-group.png" style="width: 45%; opacity: 0.3;" class="back-img"  >
+    <span style="text-align: left; position: absolute; line-height: 20px;" >
+            Active loan<br>
+            Loan Amount: None <br>
+            Loan Balance: 0
+    </span>
+        </div>
+    
+
+    
+        <!-- second two boxes -->
+        <div style="background-color: rgba(60, 60, 207, 0.795); " class="top-boxes" onmouseover="hoverEffectOn3();" onmouseout="hoverEffectOff3();">
+            <img src="./assets/download__2_-removebg-preview.png"  style=" opacity: 0.2;" class="back-img" >
+    <span style="float: left; position: absolute;" >
+            Acc. Name: Sullivan Trust<br>
+            Total Accounts:<br>
+            Member ID: 1082
+    </span>
+        </div>
+
+        <div style="background-color: rgb(202, 56, 56); " class="top-boxes" onmouseover="hoverEffectOn4();" onmouseout="hoverEffectOff4();">
+            <img src="./assets/mck-icon-group.png" style=" width: 45%; opacity: 0.4;" class="back-img" >
+    <span style="text-align: left; position: absolute;">    
+            Investments<br>
+            Fixed Deposit: 0<br>
+            Shares Purchased
+    </span>
+        </div>
+        <!-- div below ends container for topboxes  -->
+    </div>
+    
+
+    <div class="report">
+        <!-- red topline  -->
+        <div class="red-top-line"></div><br>
+        
+        <span style="color:rgb(235, 96, 96); padding: 10px;">  Current Account Report</span>
+        
+        <span class="close_report" onclick="close_report()"> &times;</span>
+        <span class="minimise_report" onclick="minimise_report()" id="minimise">&minus;</span>
+        <span onclick="add_report()" id="add">&plus;</span>
+         
+        <!-- use id's for scripting -->
+
+    <div class="table_1_main" id="main_table">
+        <!-- to style background -->
+        <div class="table-1">
+            <span style="font-weight: 600;">STATUS</span><br>
+             Active
+        </div>
+
+        <div class="table-1" id="balance">
+            <span style="font-weight: 600;">Available Balance (GBP):</span>
+            <br>
+            <span >
+                <span style="font-weight: 900;">&pound;</span> 44,692,519.90
+            </span>
+        </div>
+
+        <div class="table-1">
+            <b>Account No.</b><br>
+            14835670069
+        </div>
+
+        <div class="table-1">
+            <b>Date Opened</b>
+                <br>
+            11-05-2015
+        </div>
+    </div>
+      
+
+        
+
+        <table class="table-2" id="table_2">
+            
+            <tr>
+                <th>Bank Acc No</th>
+                <th>Deposit</th>
+                <th>Withdraw</th>
+                <th>Transaction Date</th>
+                <th>Transaction Type</th>
+                <th style="padding-left: 10px;">Amount</th>
+                <th>Remark</th>
+            </tr>
+            <tr>
+                <td> 14835670069</td>
+                <td class="amount">10,002,007.00</td>
+                <td> </td>
+                <td>16-05-2015</td>
+                <td>Wire Transfer</td>
+                <td class="amount">10,002,007.00</td>
+                <td>Remittance</td>
+            <tr>
+                <td> 14835670069</td>
+                <td class="push_money"> 7,210,300.15</td>
+                <td> </td>
+                <td>22-08-2016</td>
+                <td>Wire Transfer</td>
+                <td class="push_money"> 7,210,300.15</td>
+                <td>Remittance</td>
+            </tr>
+            <tr>
+                <td> 14835670069</td>
+                <td class="push_money"> 9,000,000.25</td>
+                <td> </td>
+                <td>11-02-2017</td>
+                <td>Wire Transfer</td>
+                <td class="push_money"> 9,000,000.25</td>
+                <td>Remittance</td>
+            </tr>
+            <tr>
+                <td> 14835670069</td>
+                <td class="push_money">5,170,210.20  </td>
+                <td> </td>
+                <td>18-02--2018</td>
+                <td>Wire Transfer</td>
+                <td class="push_money">5,170,210.20  </td>
+                <td>Remittance</td>
+            </tr>
+            <tr>
+                <td> 14835670069</td>
+                <td>13,310,002.30</td>
+                <td> </td>
+                <td>12-04-2019</td>
+                <td>Wire Transfer</td>
+                <td>13,310,002.30</td>
+                <td>Remittance</td>
+            </tr>
+        </table>  
+    </div>
+
+
+    <br>
+ 
+
+
+<!-- end main body with div below  -->
+</div>
+
+
+   
+<div class="main-menu">
+    <div class="menu-list">
+        <div style="background-color: black; color: rgb(122, 114, 114); padding: 10px;"><span id="main-nvgn">MAIN NAVIGATION</span></div>
+
+        <a href="index.html"><i class="fas fa-th"></i>  <span class="menu-writing">  Dashboard </span></a>
+
+        <a href="#" onclick="drop_nav1()">
+            <i class="fa fa-tags"></i>  <span class="menu-writing"> Beneficiary </span> <span style="margin-left: 60px;"></span>
+            <span class="side-arrows">
+                <i class="fa fa-angle-down" id="down-icon-1"></i>
+                <i class="fa fa-angle-left" style="display: none;" id="left-icon-1"></i>
+            </span>
+        </a>
+             <div class="sub-nav" >
+                <a href="add_beneficiary.html" >Add Beneficiary</a>
+                <a href="beneficiary_list.html" >Beneficiary List</a>
+            </div>
+
+        <a href="#" onclick="drop_nav2()" >
+            <i class="fas fa-chart-pie"></i>  <span class="menu-writing"> Fixed Deposit </span> <span style="margin-left: 50px;"></span>
+            <span class="side-arrows">
+                <i class="fa fa-angle-down" id="down-icon-2"></i>
+                <i class="fa fa-angle-left" style="display: none;" id="left-icon-2"></i>
+            </span>
+        </a>
+        <div class="sub-nav">
+            <a href="open_fd.html">Open FD</a><br>
+            <a href="Withdraw_FD.html">Withdraw FD</a><br>
+            <a href="FD_List.html">FD List</a>
+        </div>
+
+        <a href="#" onclick="drop_nav3()">
+            <i class="fa fa-laptop"></i> <span class="menu-writing"> Loan Application </span> <span style="margin-left: 28px;"></span>
+            <span class="side-arrows">
+                <i class="fa fa-angle-down" id="down-icon-3"></i>
+                <i class="fa fa-angle-left" style="display: none;" id="left-icon-3"></i>
+            </span>
+        </a>
+        <div class="sub-nav" >
+            <a href="Apply_for_Loan.html">Apply for Loan</a>
+            <a href="loan_status.html">Loan status</a>
+        </div>
+
+        <a href="#" onclick="drop_nav4()">
+            <i class="fa fa-edit"></i>  <span class="menu-writing"> Fund Transfer </span> <span style="margin-left: 50px;"></span>
+            <span class="side-arrows">
+                <i class="fa fa-angle-down" id="down-icon-4"></i>
+                <i class="fa fa-angle-left" style="display: none;" id="left-icon-4"></i>
+            </span>
+        </a>
+        <div class="sub-nav" >
+            <a href="Transfer_Fund.html"> <span class="menu-writing">Transfer Fund</span> </a>
+            <a href="Add_Remittance_Request.html">Add Remittance Request</a>
+        </div>
+
+        <a href="#" onclick="drop_nav5()">
+            <i class="fa fa-edit"></i>  <span class="menu-writing"> Schemes </span> <span style="margin-left: 80px;"></span>
+            <span class="side-arrows">
+                <i class="fa fa-angle-down" id="down-icon-5"></i>
+                <i class="fa fa-angle-left" style="display: none;" id="left-icon-5"></i>
+            </span>
+        </a>
+        <div class="sub-nav" >
+            <a href="FD_schemes.html">FD Schemes</a>
+        </div>
+
+        <a href="#" onclick="drop_nav6()">
+            <i class="fa fa-table"></i>  <span class="menu-writing"> Account Statement </span>  <span style="margin-left: 22px;"></span>
+            <span class="side-arrows">
+                <i class="fa fa-angle-down" id="down-icon-6"></i>
+                <i class="fa fa-angle-left" style="display: none;" id="left-icon-6"></i>
+            </span>
+        </a>
+        <div class="sub-nav" >
+            <a href="account_statement.html">A/C Statement</a>
+        </div>
+
+        <a href="#" onclick="drop_nav7()">
+            <i class="fa fa-folder"></i>   <span class="menu-writing"> Support Ticket </span> <span style="margin-left: 48px;"></span>
+            <span class="side-arrows">
+                <i class="fa fa-angle-down" id="down-icon-7"></i>
+                <i class="fa fa-angle-left" style="display: none;" id="left-icon-7"></i>
+            </span>
+        </a>
+        <div class="sub-nav">
+            <a href="generate_ticket.html">Generate Ticket</a>
+            <a href="ticket_list.html">Ticket List</a>
+        </div>
+
+    </div>
+</div>
+
+
+    <footer>
+       
+        Copyright &copy; 2017-2020 <a href="../index.html" style="color: blue;">Online Banking Portal</a> . All rights reserved.
+         <span class="version">version 1.0</span>
+        
+    </footer>
+</body>
+</html>

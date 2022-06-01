@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="styles/logged_css.css" rel="stylesheet">
+    <script
+    src="https://kit.fontawesome.com/6a5b34451f.js"
+    crossorigin="anonymous"
+  ></script>
+    <script type="text/javascript" src="script/drop_menu.js"></script>
+    <script type="text/javascript" src="script/navigation_script.js"></script>
+    <script type="text/javascript" src="script/response.js"></script>
+</head>
+<body>
+    <div class="top-line">
+        <a href="#" class="menu-icon"><char style="color: white;" onclick="Open()">&#9776</char></a>
+            <a href="#" class="close-icon"><char style="color: white;" onclick="Close()">&#9776</char></a>
+            
+    </div>
+
+    
+
+<div class="main-body">
+        <!-- profile page drop  -->
+   
+    
+    <div class="report">
+        <!-- orange topline  -->
+        <div class="orange-top-line"></div><br>
+
+    
+        
+            
+       
+            </div>
+<!-- end main body with div below  -->
+    </div>
+
+
+
+   
+    <div class="main-menu">
+        <div class="menu-list">
+            <div style="background-color: black; color: rgb(122, 114, 114); padding: 10px;"><span id="main-nvgn">MAIN NAVIGATION</span></div>
+    
+            <a href="index.html"><i class="fas fa-th"></i>  <span class="menu-writing">  Dashboard </span></a>
+    
+            <a href="#" onclick="drop_nav1()">
+                <i class="fa fa-tags"></i>  <span class="menu-writing"> Beneficiary </span> <span style="margin-left: 60px;"></span>
+                <span class="side-arrows">
+                    <i class="fa fa-angle-down" id="down-icon-1"></i>
+                    <i class="fa fa-angle-left" style="display: none;" id="left-icon-1"></i>
+                </span>
+            </a>
+                 <div class="sub-nav" >
+                    <a href="add_beneficiary.html" >Add Beneficiary</a>
+                    <a href="beneficiary_list.html" >Beneficiary List</a>
+                </div>
+    
+            <a href="#" onclick="drop_nav2()" >
+                <i class="fas fa-chart-pie"></i>  <span class="menu-writing"> Fixed Deposit </span> <span style="margin-left: 50px;"></span>
+                <span class="side-arrows">
+                    <i class="fa fa-angle-down" id="down-icon-2"></i>
+                    <i class="fa fa-angle-left" style="display: none;" id="left-icon-2"></i>
+                </span>
+            </a>
+            <div class="sub-nav">
+                <a href="open_fd.html">Open FD</a><br>
+                <a href="Withdraw_FD.html">Withdraw FD</a><br>
+                <a href="FD_List.html">FD List</a>
+            </div>
+    
+            <a href="#" onclick="drop_nav3()">
+                <i class="fa fa-laptop"></i> <span class="menu-writing"> Loan Application </span> <span style="margin-left: 28px;"></span>
+                <span class="side-arrows">
+                    <i class="fa fa-angle-down" id="down-icon-3"></i>
+                    <i class="fa fa-angle-left" style="display: none;" id="left-icon-3"></i>
+                </span>
+            </a>
+            <div class="sub-nav" >
+                <a href="Apply_for_Loan.html">Apply for Loan</a>
+                <a href="loan_status.html">Loan status</a>
+            </div>
+    
+            <a href="#" onclick="drop_nav4()">
+                <i class="fa fa-edit"></i>  <span class="menu-writing"> Fund Transfer </span> <span style="margin-left: 50px;"></span>
+                <span class="side-arrows">
+                    <i class="fa fa-angle-down" id="down-icon-4"></i>
+                    <i class="fa fa-angle-left" style="display: none;" id="left-icon-4"></i>
+                </span>
+            </a>
+            <div class="sub-nav" >
+                <a href="Transfer_Fund.html"> <span class="menu-writing">Transfer Fund</span> </a>
+                <a href="Add_Remittance_Request.html">Add Remittance Request</a>
+            </div>
+    
+            <a href="#" onclick="drop_nav5()">
+                <i class="fa fa-edit"></i>  <span class="menu-writing"> Schemes </span> <span style="margin-left: 80px;"></span>
+                <span class="side-arrows">
+                    <i class="fa fa-angle-down" id="down-icon-5"></i>
+                    <i class="fa fa-angle-left" style="display: none;" id="left-icon-5"></i>
+                </span>
+            </a>
+            <div class="sub-nav" >
+                <a href="FD_schemes.html">FD Schemes</a>
+            </div>
+    
+            <a href="#" onclick="drop_nav6()">
+                <i class="fa fa-table"></i>  <span class="menu-writing"> Account Statement </span>  <span style="margin-left: 22px;"></span>
+                <span class="side-arrows">
+                    <i class="fa fa-angle-down" id="down-icon-6"></i>
+                    <i class="fa fa-angle-left" style="display: none;" id="left-icon-6"></i>
+                </span>
+            </a>
+            <div class="sub-nav" >
+                <a href="account_statement.html">A/C Statement</a>
+            </div>
+    
+            <a href="#" onclick="drop_nav7()">
+                <i class="fa fa-folder"></i>   <span class="menu-writing"> Support Ticket </span> <span style="margin-left: 48px;"></span>
+                <span class="side-arrows">
+                    <i class="fa fa-angle-down" id="down-icon-7"></i>
+                    <i class="fa fa-angle-left" style="display: none;" id="left-icon-7"></i>
+                </span>
+            </a>
+            <div class="sub-nav">
+                <a href="generate_ticket.html">Generate Ticket</a>
+                <a href="ticket_list.html">Ticket List</a>
+            </div>
+    
+        </div>
+    </div>
+
+    <footer>
+        Copyright 2017-2020 <a href="../index.html" style="color: blue;">Online Banking Portal</a> . All rights reserved.
+         <span class="version">version 1.0</span>
+        
+    </footer>
+</body>
+</html>

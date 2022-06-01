@@ -1,0 +1,724 @@
+
+body{
+    background-color: rgba(224, 214, 214, 0.795);
+    margin: 0px;
+    color: rgba(0, 0, 0, 0.726);
+}
+
+.top-line{
+    background-color: orange;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 106%;   
+}
+
+/* change amount  */
+.change_amount{
+    float: right; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* 
+#icon_hover{
+    display: none;
+    
+} */
+.profile_panel_drop{
+    transform: translateY(-9.6px);
+    width: 202px;
+    padding-left: 9px;
+    padding-bottom: 7.3px;
+    float: right;
+    background-color: rgb(197, 131, 9);
+}
+.profile_panel_drop a{
+    text-decoration: none;
+}
+.profile_panel_drop img{
+    width: 12%;
+    transform: translateY(7px);
+}
+.profile_panel_drop span{
+    color: rgb(244, 246, 248); 
+    font-family: Arial, Helvetica, sans-serif;
+}
+.profile_panel_container{
+    position: absolute;
+    left: 87%; 
+    width: 18%;
+    height: max-content;
+    display: none;  
+}
+.profile_panel_intro{
+    background-color: blue;
+   text-align: center;
+    display: none;
+    
+}
+.profile_panel_end{
+    background-color: rgb(221, 214, 214);  
+    box-shadow: rgba(75, 74, 74, 0.253) 1px 1px 1px;
+}
+.profile_panel_container button{
+    margin: 10px;
+    color: white;
+    
+}
+.main-body{
+    position: absolute;
+    width: 87%;
+    left: 14.6%;
+    transition: all 1s; 
+}
+
+.main-menu{
+    position: absolute;
+    top: 41px;
+    background-color: rgb(46, 44, 44);
+    display: block;
+    padding-bottom:348px;
+    font-size:13px;  
+    transition: all 0.8s;
+    width: 15%;
+    max-height: 50%;
+    
+}
+.menu-list .sub-nav a{
+    color: rgb(164, 164, 168);
+}
+.menu-list i{
+    font-size: 12px;
+    opacity: 0.8;
+}
+.sub-nav a:hover{
+    color: rgb(215, 215, 247);
+}
+.sub-nav{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.589);
+    
+}
+
+.menu-list a{
+    text-decoration: none;
+    margin: 15px;
+    font-size: 15px;
+    line-height: 3px;
+    display: inline-table;
+    color: rgb(222, 236, 241);
+    
+}
+
+
+.menu-list :hover{
+    color: rgb(97, 97, 219);
+}
+.menu-icon{
+    display: none;
+}
+
+.top-boxes{
+    color: rgba(255, 254, 254, 0.89);
+    margin: 5px;
+    width: 20%;
+    height: 90px;
+    padding: 16px;
+    display: inline-block;
+    border-radius: 3px;
+    line-height: 25px;
+    box-shadow: rgba(75, 74, 74, 0.253) 1px 1px 1px;
+}
+.back-img{
+    float: right;
+    width: 40%;
+    
+}
+
+
+
+@media(max-width:1200px){
+
+.main-menu{
+    width: 55%;
+}
+#left-icon-1,#left-icon-2,#left-icon-3, #left-icon-4, #left-icon-5, #left-icon-6,#left-icon-7{
+    display: none;
+}
+
+#down-icon-1,#down-icon-2,#down-icon-3, #down-icon-4, #down-icon-5, #down-icon-6,#down-icon-7{
+    display: none;
+}
+
+.top-boxes{
+    width: 39%;
+    height: 50px;
+    margin:6px;
+    font-size: 8px;
+    padding: 5px;
+    line-height: 16px ;
+    font-size: 10px;
+
+}
+.top-line{
+    padding-right: 40px;
+}
+
+.profile_panel_drop{
+    position: absolute;
+    left: 70%;
+    top: 10px;
+    width: 150px;
+    padding: 6.5px;
+}
+
+
+.profile_panel_container{
+    left: 64%;
+    width: 50%;
+}
+.profile_panel_container img{
+  display: none;
+}
+/* for img on profile page  */
+.profile_pic{
+    width: 100%;
+}
+.profile_pic_container{
+    transform: translateX(-60px);
+}
+
+.profile_panel_container button{
+    margin: 3px;
+}
+
+.back-img{
+   display: none;
+}
+.report{
+    margin: 0px;
+    overflow-x: scroll;
+    width: auto;
+    
+}
+
+.page-top-words{
+    font-style: oblique;
+    
+}
+
+.change_amount{
+    font-size: 11px;
+    font-weight: lighter;
+}
+
+.table-1{
+    font-size:10px;
+    width: max-content;
+    margin: 35px;
+    transform: translateX(20px);
+
+}
+.table-2{
+    font-size:6px;
+    width: max-content;
+    padding: 0px;
+}
+
+footer{
+    font-size: 8px;
+    margin-top: 250px;
+}
+
+.menu-list{
+    font-size: 10px;
+}
+
+.push_money{
+    transform: translateX(0px);
+}
+
+}
+
+
+.report{
+background-color: white;
+margin: 15px;
+font-weight: bolder;
+/* overflow-x: scroll; */
+width: 100%;
+border-bottom: 2px solid black;
+height: max-content;
+transition: all ease-out 0.4s;
+}
+
+.push_money{
+    transform: translateX(6px);
+}
+
+.close_report{
+    float: right;
+    transform: translateX(-15px) translateY(-15px);
+    text-decoration: none;
+}
+.minimise_report{
+    float: right;
+    transform: translateX(-26px) translateY(-15px);
+    text-decoration: none;
+}
+
+#add{
+    display: none;
+    float: right;
+    transform: translateX(-26px) translateY(-15px);
+    text-decoration: none;
+}
+
+.red-top-line{
+    background-color: rgba(255, 0, 0, 0.589);
+    height: 4px;
+    width: 100%;
+    /* width: 115%; */
+    border-radius: 2px;
+}
+.orange-top-line{
+    background-color:orange;
+    height: 7px;
+    width: 100%;
+    border-radius: 2px;
+}
+.table_1_main{
+    border-top:  0.5px solid rgba(0, 0, 0, 0.068);
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.068);
+    padding: 20px;
+    border-radius: 2px;
+    transform: translateY(12px);
+    
+}
+.table-1{
+    width: 20%;
+    margin-left: 8px;
+    display: inline-block;
+}
+
+.table-2{
+    margin: 20px;
+    /* width: 115%; */
+    width: 95%;
+    display: inline-table;
+    height: 150px;
+}
+
+.table-2  tr:nth-child(odd){
+    background-color: rgba(221, 221, 221, 0.281);
+}
+
+table{
+    border-collapse: collapse;
+}
+
+
+th{
+    text-align: left;
+}
+
+
+
+footer{
+    background-color: white;
+    padding: 10px;
+    width: 104.3%;
+    top: 120%;
+    position: absolute;
+}
+.version{
+    position: absolute;
+    left: 92%;
+    
+}
+
+@media(max-width:1200px){
+    .version{
+        left: 89%;
+    }
+    footer{
+        width: 113%;
+    }
+}
+
+.page-top-words{
+    padding: 10px; 
+    background-color:  rgba(202, 202, 202, 0.137);
+     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media(max-width:1200px){
+.page-top-words{
+    font-size: 14px;
+}
+}
+
+
+/* beneficiary page style  */
+.beneficiary-form1{
+    padding: 30px;
+    margin-bottom:60px ;
+    line-height: 25px;
+   
+}
+.beneficiary-form1 input{
+width: 280px;
+height: 18px;
+}
+
+@media(max-width:1200px){
+    .beneficiary-form1 input{
+        width: 170px;
+        margin-bottom:20px ;
+        }
+        .beneficiary-form1{
+            padding: 8px;
+           
+        }
+        
+}
+.blue-button{
+    background-color: rgba(0, 0, 255, 0.774);
+    color: white;
+    width: max-content;
+    padding: 6px;
+    margin: 10px;
+}
+.red-button{
+    float: right;
+    background-color:red;
+    color: white;
+    width: max-content;
+    padding: 6px;
+    margin: 10px;
+     
+}
+.green-button{
+    float: right;
+    background-color: green;
+    color: white;
+    width: max-content;
+    padding: 6px;
+    margin: 10px;
+}
+.beneficiary-form1 #error{
+    color: red;
+    
+}
+
+/* to style beneficiary list  */
+.beneficiary-form2{
+    padding: 5px;
+}
+.beneficiary-form2 input{
+    width: 400px;
+    height: 25px;
+}
+.beneficiary1_error{
+color: red;
+display: none;
+}
+
+.error_messages{
+    color: red;
+    text-align: end;
+    font-family: 'Times New Roman', Times, serif;
+    display: none;
+}
+
+#error1, #error4{
+    padding-right: 5%;
+}
+
+
+@media(max-width:1200px){
+    .beneficiary-form2 input{
+        width: 170px;
+        height: 18px;
+    }
+    .beneficiary-form2 .blue-button{
+        margin: 0px;
+        font-size: 10px;
+        height: 25px ;
+        
+    }
+    #search-blue-button{
+        transform: translateX(-20px);
+        
+    }
+    .beneficiary-form2{
+        padding: 10px;
+    } 
+}
+
+/* to style fixed deposit */
+
+
+.fixed-deposit1 form{
+padding: 30px;
+
+} 
+
+.fixed-deposit1 .Open-FD{
+   margin: 10px;
+   line-height: 20px;
+   text-align: center;
+}
+.fixed-deposit1 input{
+    width: 40%;
+    height: 20px;
+}
+label{
+   font-weight: 600;
+   
+}
+
+.Open-FD label{
+    width: 230px;
+    display: inline-block;
+    text-align: justify;
+}
+select{
+    width:40% ;
+    height: 30px;
+}
+ .description-box{
+     margin: 30px;
+     margin-left: 19.6%;
+     
+}
+.textarea{
+    margin-top: 10px;
+     height: 50px;
+      width: 80%;
+}
+#apply_loan_textarea{
+    margin-top: 10px;
+    height: 50px;
+    width: 51%;
+    transform: translateX(130px);
+}
+@media(max-width:1200px){
+    #apply_loan_textarea{
+        transform: translateX(2px);
+        width: 90%;
+    }
+    .description-box{
+        margin-left: 5px;
+    }
+    .textarea{
+        width: 90%;
+    }
+}
+@media(max-width:1200px){
+.small-FD-list{
+    width: 200px;
+    margin: 5px;
+}
+}
+
+
+
+
+
+/* to style fd schemes */
+@media(max-width:1200px){
+    .FD_schemes h1{
+        font-size: 25px;
+    }
+}
+.FD_schemes{
+    border: 4px solid rgb(157, 157, 245);
+    text-align: center;
+    margin: 20px;
+    border-radius: 3px;
+    box-shadow: black 10px;
+    font-style: oblique;
+}
+.sub-note{
+    font-size: 18px;
+}
+
+
+/* to style remittnace request  */
+.side-side-boxes{
+    width:45%;
+}
+.fixed-deposit1{
+    font-family: 'Times New Roman', Times, serif;
+}
+.side-side-boxes input{
+height: 20%;
+}
+
+.side-side-boxes h2{
+    color: rgba(114, 114, 250, 0.993);
+    padding-left: 30px;
+    margin-bottom: 40px;
+}
+@media(max-width:1200px){
+    .side-side-boxes{
+        width: fit-content;
+        font-size: 10px;
+    }
+    .side-side-boxes h2{
+        font-size: 20px;
+        transform: translateY(30px);
+    }
+    .side-side-boxes input{
+    width: 96%;
+    height: 20%;
+    }
+    .side-side-boxes select{
+        width: 96%;
+            }
+   
+}
+
+/* to style account statement */
+@media(max-width:1200px){
+    .A_C label{
+        font-size: 14px;
+    }
+    .A_C br{
+        display: block;
+    }
+    
+    .A_C input {
+        transform: translateX(-19px);
+        padding-right: 100px;
+        margin: 5px;
+        
+    }
+    
+    .A_C select{
+        transform: translateX(-20px);
+        padding-right: 200px;
+    }
+    
+}
+
+.account-statement form{
+    padding: 28px;
+    
+    } 
+    
+    
+    .account-statement .A_C{
+       margin: 10px;
+       line-height: 20px;
+       text-align: center;
+    }
+    .account-statement input{
+        width: 40%;
+        height: 24px;
+    }
+
+    .A_C br{
+        display: none;
+    }
+    label{
+       font-weight: 600;
+       
+    }
+    
+    .A_C label{
+        width: 230px;
+        display: inline-block;
+        text-align: justify;
+    }
+    select{
+        width:40% ;
+        height: 30px;
+    }
+
+    
+    /* to style account statement onlyy */
+@media(max-width:1200px){
+    
+    
+
+    .account-statement-only .A_C{
+        display: block;
+        margin: 28px;
+        margin-top: 4px;
+    }
+
+    .account-statement-only .A_C input{
+        width: 250px;
+        padding-right: 0px;
+        margin-top: 5px;
+    }
+    
+    .account-statement-only .A_C select{
+        padding-right: 257px;
+    }
+    
+}
+
+.account-statement-only{
+ 
+    padding: 28px;
+    
+    } 
+    
+    .account-statement-only .A_C{
+      width: 30%;
+      font-weight: bolder;
+      display: inline-block;
+    }
+
+    .account-statement-only input, .account-statement-only select{
+        width: 80%;
+        height: 24px;
+    }
+
+    .account-statement-only label{
+       font-weight: 600;
+       
+    }
+    
+    
+
+     
+
+
+/* to style support ticket  */
+.support-ticket-form1{
+
+        padding: 30px;
+        margin-bottom:60px ;
+        
+    }
+    .support-ticket-form1 input{
+    width: 280px;
+    height: 18px;
+    }
+
+    .support-ticket-form1  #description-area{
+        margin-top: 30px;
+        
+    }
+
+@media(max-width:1200px){
+.support-ticket-form1 input{
+    width: 170px;
+    margin-bottom:20px ;
+    }
+.support-ticket-form1{
+    padding: 13px;
+  }
+  #title-form{
+      transform: translateX(6px);
+  }
+  
+  
+}
+
+
+
+

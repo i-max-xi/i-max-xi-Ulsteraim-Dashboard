@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="styles/logged_css.css" rel="stylesheet">
+    <script
+    src="https://kit.fontawesome.com/6a5b34451f.js"
+    crossorigin="anonymous"
+  ></script>
+    <script type="text/javascript" src="script/drop_menu.js"></script>
+    <script type="text/javascript" src="script/navigation_script.js"></script>
+    <script type="text/javascript" src="script/response.js"></script>
+</head>
+<body>
+    <div class="top-line">
+        <a href="#" class="menu-icon"><char style="color: white;" onclick="Open()">&#9776</char></a>
+            <a href="#" class="close-icon"><char style="color: white;" onclick="Close()">&#9776</char></a>
+            
+    </div>
+
+    
+
+<div class="main-body">
+         <!-- profile page drop  -->
+   
+    
+    <div class="report">
+        <!-- orange topline  -->
+        <div class="orange-top-line"></div><br>
+
+        <div class="page-top-words">
+            Open FD <span class="change_amount">Current Balance: <span style="font-weight: 900; ">&pound;</span> 44,692,519.90</span>
+          </div>
+
+
+        <div class="account-statement" >
+
+           <form name="myform" onsubmit="return error()">
+               <div class="A_C">
+               <label >Account</label>
+               <select>
+                   <option value="--select--" selected>  --select--</option>
+                   <option value="14835670069">14835670069 (Current)</option>
+                   
+               </select>
+            </div>
+
+            <div class="A_C">
+                <label>Duration</label>
+               <input type="datetime" id="name1">
+               <div id="error1" class="beneficiary1_error"><span style="padding: 20px;"></span>Please enter duration...!</div>
+            </div>
+               
+            <div class="A_C">
+               <label>Maturity Date</label>
+               <input type="date" placeholder="dd/mm/yr" id="name2">
+               <div id="error2" class="beneficiary1_error">Please enter maturity date....!</div>
+            </div>
+
+            <div class="A_C">
+               <label>Maturity Amount</label>
+               <input type="text" id="name3">
+               <div id="error3" class="beneficiary1_error"><span style="padding: 20px;"></span>Please enter maturity amount....!</div>
+            </div>
+
+            <div class="A_C">
+              <label> Select FD Type</label>
+              <select>
+                <option value="--select--" selected>  --select--</option>
+                
+            </select>
+            </div>
+
+            <div class="A_C">
+              <label>FD Interest</label>
+               <input type="text" id="name4">
+               <div id="error4" class="beneficiary1_error"><span style="padding: 20px;"></span>Please enter interest value....!</div>
+            </div>
+
+            <div class="A_C">
+               <label>FD Amount</label>
+               <input type="text" id="name5">
+               <div id="error5" class="beneficiary1_error"><span style="padding: 20px;"></span>Please enter amount....!</div>
+            </div>
+            
+
+            <button type="submit" class="blue-button">Get OTP</button>
+            <button type="button" class="red-button" onclick="cancel()">Cancel</button>
+           </form>
+           
+
+</div>
+
+    <!-- for validation -->
+<script>
+    function error(){
+    var x1= document.forms["myform"]["name1"].value;
+    var x2= document.forms["myform"]["name2"].value;
+    var x3= document.forms["myform"]["name3"].value;
+    var x4= document.forms["myform"]["name4"].value;
+    var x5= document.forms["myform"]["name5"].value;
+
+    var y1 = document.getElementById('error1');
+    var y2 = document.getElementById('error2');
+    var y3 = document.getElementById('error3');
+    var y4 = document.getElementById('error4');
+    var y5 = document.getElementById('error5');
+
+    if(x1==null || x1==""){
+            y1.style.display="block";
+            return false;
+        }
+
+        else{
+            document.getElementsByClassName("beneficiary1_error")[0].style.display="none";
+        }
+
+    if(x2==null || x2==""){
+            y2.style.display="block";
+            return false;
+        }
+
+        else{
+            document.getElementsByClassName("beneficiary1_error")[1].style.display="none";
+        }
+
+    if(x3==null || x3==""){
+            y3.style.display="block";
+            return false;
+        }
+
+        else{
+            document.getElementsByClassName("beneficiary1_error")[2].style.display="none";
+        }
+
+    if(x4==null || x4==""){
+            y4.style.display="block";
+            return false;
+        }
+
+        else{
+            document.getElementsByClassName("beneficiary1_error")[3].style.display="none";
+        }
+
+        if(x5==null || x5==""){
+            y5.style.display="block";
+            return false;
+        }
+
+        else{
+            document.getElementsByClassName("beneficiary1_error")[4].style.display="none";
+        }
+        
+        getOTP();
+    }
+</script>
+        
+            
+       
+            </div>
+<!-- end main body with div below  -->
+    </div>
+
+
+
+   
+    <div class="main-menu">
+        <div class="menu-list">
+            <div style="background-color: black; color: rgb(122, 114, 114); padding: 10px;"><span id="main-nvgn">MAIN NAVIGATION</span></div>
+    
+            <a href="index.html"><i class="fas fa-th"></i>  <span class="menu-writing">  Dashboard </span></a>
+    
+            <a href="#" onclick="drop_nav1()">
+                <i class="fa fa-tags"></i>  <span class="menu-writing"> Beneficiary </span> <span style="margin-left: 60px;"></span>
+                <span class="side-arrows">
+                    <i class="fa fa-angle-down" id="down-icon-1"></i>
+                    <i class="fa fa-angle-left" style="display: none;" id="left-icon-1"></i>
+                </span>
+            </a>
+                 <div class="sub-nav" >
+                    <a href="add_beneficiary.html" >Add Beneficiary</a>
+                    <a href="beneficiary_list.html" >Beneficiary List</a>
+                </div>
+    
+            <a href="#" onclick="drop_nav2()" >
+                <i class="fas fa-chart-pie"></i>  <span class="menu-writing"> Fixed Deposit </span> <span style="margin-left: 50px;"></span>
+                <span class="side-arrows">
+                    <i class="fa fa-angle-down" id="down-icon-2"></i>
+                    <i class="fa fa-angle-left" style="display: none;" id="left-icon-2"></i>
+                </span>
+            </a>
+            <div class="sub-nav">
+                <a href="open_fd.html">Open FD</a><br>
+                <a href="Withdraw_FD.html">Withdraw FD</a><br>
+                <a href="FD_List.html">FD List</a>
+            </div>
+    
+            <a href="#" onclick="drop_nav3()">
+                <i class="fa fa-laptop"></i> <span class="menu-writing"> Loan Application </span> <span style="margin-left: 28px;"></span>
+                <span class="side-arrows">
+                    <i class="fa fa-angle-down" id="down-icon-3"></i>
+                    <i class="fa fa-angle-left" style="display: none;" id="left-icon-3"></i>
+                </span>
+            </a>
+            <div class="sub-nav" >
+                <a href="Apply_for_Loan.html">Apply for Loan</a>
+                <a href="loan_status.html">Loan status</a>
+            </div>
+    
+            <a href="#" onclick="drop_nav4()">
+                <i class="fa fa-edit"></i>  <span class="menu-writing"> Fund Transfer </span> <span style="margin-left: 50px;"></span>
+                <span class="side-arrows">
+                    <i class="fa fa-angle-down" id="down-icon-4"></i>
+                    <i class="fa fa-angle-left" style="display: none;" id="left-icon-4"></i>
+                </span>
+            </a>
+            <div class="sub-nav" >
+                <a href="Transfer_Fund.html"> <span class="menu-writing">Transfer Fund</span> </a>
+                <a href="Add_Remittance_Request.html">Add Remittance Request</a>
+            </div>
+    
+            <a href="#" onclick="drop_nav5()">
+                <i class="fa fa-edit"></i>  <span class="menu-writing"> Schemes </span> <span style="margin-left: 80px;"></span>
+                <span class="side-arrows">
+                    <i class="fa fa-angle-down" id="down-icon-5"></i>
+                    <i class="fa fa-angle-left" style="display: none;" id="left-icon-5"></i>
+                </span>
+            </a>
+            <div class="sub-nav" >
+                <a href="FD_schemes.html">FD Schemes</a>
+            </div>
+    
+            <a href="#" onclick="drop_nav6()">
+                <i class="fa fa-table"></i>  <span class="menu-writing"> Account Statement </span>  <span style="margin-left: 22px;"></span>
+                <span class="side-arrows">
+                    <i class="fa fa-angle-down" id="down-icon-6"></i>
+                    <i class="fa fa-angle-left" style="display: none;" id="left-icon-6"></i>
+                </span>
+            </a>
+            <div class="sub-nav" >
+                <a href="account_statement.html">A/C Statement</a>
+            </div>
+    
+            <a href="#" onclick="drop_nav7()">
+                <i class="fa fa-folder"></i>   <span class="menu-writing"> Support Ticket </span> <span style="margin-left: 48px;"></span>
+                <span class="side-arrows">
+                    <i class="fa fa-angle-down" id="down-icon-7"></i>
+                    <i class="fa fa-angle-left" style="display: none;" id="left-icon-7"></i>
+                </span>
+            </a>
+            <div class="sub-nav">
+                <a href="generate_ticket.html">Generate Ticket</a>
+                <a href="ticket_list.html">Ticket List</a>
+            </div>
+    
+        </div>
+    </div>
+    
+    <footer>
+        Copyright 2017-2020 <a href="../index.html" style="color: blue;">Online Banking Portal</a> . All rights reserved.
+         <span class="version">version 1.0</span>
+        
+    </footer>
+</body>
+</html>
