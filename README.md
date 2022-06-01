@@ -1,9 +1,14 @@
 
 # Ulsteraim Dashboard
 
-![sneak peak of login page](assets/log in.JPG)
+<div>
+    <img src="assets/log-in.JPG" width="45%" />
+    <img src="assets/Dashboard.JPG" width="45%" />
+</div>
 
-![sneak peak of dashboard](assets/Dashboard.JPG)
+<!-- ![sneak peak of login page](assets/log-in.JPG) -->
+
+<!-- ![sneak peak of dashboard](assets/Dashboard.JPG) -->
 
 > This project is a copy of a bank account dashboard feature I built for Ulsteraim bank.
 This project only shows the dashboard feature and its interactions but not the entire Ulsteraim website.
