@@ -11,7 +11,7 @@
 This project only shows the dashboard feature and its interactions but not the entire Ulsteraim website.
 
 ## See Live
-⚠️ This is not a link to create an account with Ulsteraim.
+⚠️ This is not a link to create an account with Ulsteraim <br>
 Click [HERE](https://ulsteraim.netlify.app/sign_in/logged_in.html) to interact live with the project.
 
 ## Built With:
