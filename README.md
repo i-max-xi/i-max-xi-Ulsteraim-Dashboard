@@ -5,8 +5,8 @@
     <img src="assets/log-in.JPG" width="48%" />
     <img src="assets/Dashboard.JPG" width="48%" />
 </div>
+<br>
 
-<br/>
 > This project is a copy of a bank account dashboard feature I built for Ulsteraim bank.<br/>
 This project only shows the dashboard feature and its interactions but not the entire Ulsteraim website.
 
