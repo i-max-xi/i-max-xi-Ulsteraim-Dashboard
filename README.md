@@ -2,15 +2,12 @@
 # Ulsteraim Dashboard
 
 <div>
-    <img src="assets/log-in.JPG" width="45%" />
-    <img src="assets/Dashboard.JPG" width="45%" />
+    <img src="assets/log-in.JPG" width="48%" />
+    <img src="assets/Dashboard.JPG" width="48%" />
 </div>
 
-<!-- ![sneak peak of login page](assets/log-in.JPG) -->
-
-<!-- ![sneak peak of dashboard](assets/Dashboard.JPG) -->
-
-> This project is a copy of a bank account dashboard feature I built for Ulsteraim bank.
+<br/>
+> This project is a copy of a bank account dashboard feature I built for Ulsteraim bank.<br/>
 This project only shows the dashboard feature and its interactions but not the entire Ulsteraim website.
 
 ## See Live
@@ -20,12 +17,12 @@ Click [HERE](https://ulsteraim.netlify.app/sign_in/logged_in.html) to interact l
 ## Built With:
  - Pure HTML
  - Pure CSS
- - Vanilla JavaScript.
+ - Vanilla JavaScript
 
 ## Features
-1: List structure.
-2: Interactive list.
-3: Add and remove items.
+1: Profile page
+2: Overview of account
+3: Support Ticketting
 
 
 ## Cloning the project
